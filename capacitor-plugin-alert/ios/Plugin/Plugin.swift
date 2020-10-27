@@ -5,7 +5,7 @@ import Capacitor
 public class Alert: CAPPlugin {
 
     @objc func present(_ call: CAPPluginCall) {
-        let message = call.getString("msesage") ?? ""
+        let message = call.getString("message") ?? ""
         let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "Ok", style: .default))
