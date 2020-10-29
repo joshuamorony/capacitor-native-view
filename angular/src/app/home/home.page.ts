@@ -12,10 +12,6 @@ export class HomePage {
   constructor() {}
 
   showAlert() {
-    console.log(Plugins);
-    console.log(Alert);
-
-    console.log("showing alert");
     Alert.present({
       message: "hello",
     });
